@@ -1,0 +1,270 @@
+.skeleton {
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.skeleton__item {
+    width: 270px;
+    padding: 20px;
+}
+
+.card img {
+    object-fit: contain;
+}
+
+.skeletton__images {
+    width: 100%;
+    height: 250px;
+    background: #ddd;
+    border-radius: 14px;
+}
+
+.skeleton__line {
+    width: 100%;
+    height: 30px;
+    background: #ddd;
+    margin-top: 14px;
+    border-radius: 6px;
+
+}
+
+.skeleton__line:nth-child(3) {
+    width: 80%;
+}
+
+.skeleton__line:nth-child(4) {
+    width: 60%;
+}
+
+.skelete__inme {
+    background: linear-gradient(90deg, #ddd, #f7f7f7, #ddd);
+    background-size: 200%;
+    animation: skeleton 1s linear 0s infinite;
+}
+
+@keyframes skeleton {
+    to {
+        background-position: 200%;
+    }
+
+}
+
+.card {
+    margin-top: 30px;
+    width: 270px;
+    height: 322px;
+    border-radius: 4px;
+    padding-bottom: 16px;
+    display: flex;
+    box-shadow: 0 0 5px 5px #f5f5f5;
+    background: #fff;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    overflow: hidden;
+    cursor: default;
+    transition: all 400ms ease;
+    position: relative;
+
+}
+
+.card__icon {
+    display: flex;
+    flex-direction: column;
+    // gap: 5px;
+    position: absolute;
+    right: 0px;
+    top: 14px;
+}
+
+.eey {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.card__image {
+    width: 190px;
+    height: 180px;
+}
+
+.card__foto {
+    width: 270px;
+    height: 250px;
+    border-radius: 4px;
+    background: #Fff;
+    margin: 10px auto;
+}
+
+.wrapper {
+    height: 100%;
+    gap: 30px;
+    overflow: hidden;
+
+}
+
+h3 {
+    color: #8B8E99;
+    cursor: pointer;
+}
+
+.desck {
+    font-size: 16px;
+    color: #DB4444;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    margin-right: 5px;
+    margin-left: 8px;
+}
+
+.buy {
+    padding: 5px 20px;
+    width: 100%;
+    margin: auto;
+    border: none;
+    background: black;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateY(-20px);
+}
+
+.buy:hover {
+    transform: translateY(-95px);
+    opacity: 1;
+}
+
+.semore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 234px;
+    height: 56px;
+    background-color: #DB4444;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    transition: 0.5s;
+
+    &:hover {
+        background-color: #cecdcd;
+        color: #000;
+    }
+}
+
+.card__star {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.collection {
+    display: flex;
+    list-style: none;
+    overflow: auto;
+    padding: 10px 50px;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.item {
+    font-size: 16px;
+    color: #004;
+    font-family: cursive
+}
+
+.card__item {
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    color: #000000;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    margin-top: -40px;
+}
+
+.item data {
+    white-space: nowrap;
+}
+
+.meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.meta img {
+    width: 50px;
+    height: 50px;
+}
+
+.creat {
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.icon {
+    display: flex;
+    text-align: end;
+    color: #fff;
+}
+
+@media (max-width:1100px) {
+    .skeleton {
+        margin-top: 500px;
+    }
+
+    .collection {
+        margin-top: 500px;
+    }
+
+}
+
+@media (max-width:760px) {
+    .skeleton {
+        margin-top: 800px;
+    }
+
+    .collection {
+        margin-top: 800px;
+    }
+
+    .semore {
+        width: 160px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #DB4444;
+        padding: 10px;
+        margin-bottom: 20px;
+        margin: auto;
+        cursor: pointer;
+        border: none;
+        margin-bottom: 40px;
+        color: #Fff;
+    }
+
+}

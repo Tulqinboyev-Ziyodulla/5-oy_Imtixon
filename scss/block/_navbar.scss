@@ -1,0 +1,50 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+
+    h3 {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .title {
+        display: flex;
+        align-items: center;
+        gap: 48px;
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+
+            &:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .inp {
+        display: flex;
+        align-items: center;
+
+        input {
+            outline: none;
+            background-color: #F5F5F5;
+            width: 243px;
+            height: 38px;
+            border: none;
+            font-size: 12px;
+            font-weight: 400;
+            padding: 0 15px;
+        }
+
+        .icon {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            cursor: pointer;
+        }
+    }
+}

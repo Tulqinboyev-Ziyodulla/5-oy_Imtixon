@@ -1,0 +1,33 @@
+.wrapper__box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    
+    .cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 170px;
+        height: 145px;
+        border-radius: 4px;
+        border: 1px solid #0000004D;
+        transition: 0.5s;
+
+        .cards__img {
+
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                margin-top: 16px;
+            }
+        }
+
+        &:hover {
+            cursor: pointer;
+            background-color: #DB4444;
+            color: #fafafa;
+        }
+
+    }
+    
+}

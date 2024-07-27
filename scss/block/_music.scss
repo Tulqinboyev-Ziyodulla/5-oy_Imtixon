@@ -1,0 +1,88 @@
+.music {
+    display: flex;
+    margin: 0 auto;
+    width: 1170px;
+    height: 500px;
+    background-color: #000;
+    margin-top: 100px;
+
+    .songs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .music__title {
+
+            .new {
+                color: #00FF66;
+                font-size: 16px;
+                font-weight: 600;
+            }
+    
+            h3 {
+                color: #fafafa;
+                font-size: 48px;
+                font-weight: 600;
+                max-width: 400px;
+                margin-top: 30px;
+            }
+    
+            button {
+                background-color: #00FF66;
+                margin-top: 40px;
+                width: 171px;
+                height: 56px;
+                border-radius: 4px;
+                border: none;
+                color: #fafafa;
+                font-size: 16px;
+                font-weight: 500;
+                transition: 0.5s;
+    
+                &:hover {
+                    background-color: #868686;
+                    color: #000;
+                }
+            }
+            
+            .music__wrapper {
+                display: flex;
+                align-items: center;
+                gap: 24px;
+                margin-top: 30px;
+        
+                .music__card {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    width: 62px;
+                    height: 62px;
+                    background-color: #fff;
+                    border-radius: 50%;
+        
+                    .text {
+        
+                        .hour {
+                            color: #000;
+                            font-size: 16px;
+                            font-weight: 600;
+                            margin-top: -10px;
+                        }
+        
+                        .hours {
+                            color: #000;
+                            font-size: 11px;
+                            font-weight: 400;
+                            margin-top: -2px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .song {
+            margin-top: 37px;
+        }
+    }
+}
