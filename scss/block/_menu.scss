@@ -79,7 +79,6 @@
 .card__icon {
     display: flex;
     flex-direction: column;
-    // gap: 5px;
     position: absolute;
     right: 0px;
     top: 14px;
@@ -252,19 +251,116 @@ h3 {
         margin-top: 800px;
     }
 
-    .semore {
-        width: 160px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: #DB4444;
-        padding: 10px;
-        margin-bottom: 20px;
-        margin: auto;
-        cursor: pointer;
-        border: none;
-        margin-bottom: 40px;
-        color: #Fff;
-    }
+}
 
+@media(max-width: 1200px) {
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 600px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+
+        .card {
+            width: 200px;
+            height: 300px;
+        }
+    }
+}
+
+@media(max-width: 450px) {
+    .menu {
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+    
+            .card {
+                width: 180px;
+                height: 265px;
+    
+                .card__foto {
+    
+                    img {
+                        width: 150px;
+                        height: 150px;
+                    }
+                }
+            }
+        }
+
+        .semore {
+            width: 200px;
+            height: 50px;
+        }
+    }
+}
+
+@media(max-width: 400px) {
+    .menu {
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+    
+            .card {
+                width: 150px;
+                height: 260px;
+    
+                .card__foto {
+    
+                    img {
+                        width: 150px;
+                        height: 150px;
+                    }
+                }
+
+                .card__star {
+                    gap: 0;
+                }
+            }
+        }
+
+        .semore {
+            width: 200px;
+            height: 50px;
+        }
+    }
+}
+
+@media(max-width: 350px) {
+    .menu {
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+    
+            .card {
+                width: 135px;
+                height: 200px;
+    
+                .card__foto {
+    
+                    img {
+                        width: 150px;
+                        height: 150px;
+                    }
+                }
+
+                .card__star {
+                    gap: 0;
+                }
+            }
+        }
+
+        .semore {
+            width: 200px;
+            height: 50px;
+        }
+    }
 }

@@ -49,3 +49,87 @@
         }
     }
 }
+
+
+@media(max-width: 800px) {
+    .navbar {
+
+        .title {
+
+            .contact {
+                display: none;
+            }
+        }
+    }
+}
+
+@media(max-width: 700px) {
+    .navbar {
+
+        .title {
+
+            .contact {
+                display: none;
+            }
+
+            .about {
+                display: none;
+            }
+        }
+
+        .inp {
+
+            i {
+                display: none;
+            }
+        }
+    }
+}
+
+@media(max-width: 550px) {
+    .navbar {
+
+        .title {
+
+            .contact {
+                display: none;
+            }
+
+            .about {
+                display: none;
+            }
+
+            p {
+                display: none;
+            }
+        }
+    }
+}
+
+@media(max-width: 400px) {
+    .navbar {
+
+        .title {
+
+            .contact {
+                display: none;
+            }
+
+            .about {
+                display: none;
+            }
+
+            p {
+                display: none;
+            }
+        }
+
+        .inp {
+
+            input {
+                width: 200px;
+                height: 38px;
+            }
+        }
+    }
+}

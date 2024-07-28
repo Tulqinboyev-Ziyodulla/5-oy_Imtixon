@@ -25,3 +25,12 @@
         margin-top: 70px;
     }
 }
+
+@media(max-width: 400px) {
+    .main {
+
+        h3 {
+            font-size: 30px;
+        }
+    }
+}
